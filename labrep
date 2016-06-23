@@ -1,0 +1,11 @@
+sudo iptables -I OUTPUT -p udp --dport 53 -j ACCEPT
+sudo iptables -I INPUT -p udp --sport 53 -j ACCEPT
+
+ServerVM:
+hts -F localhost:22 443
+
+ClientVM:
+htc -F 12345 172.16.137.144:443
+
+ssh -p12345 127.0.0.1
+
