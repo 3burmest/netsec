@@ -1,0 +1,5 @@
+2.2.1 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days XXX
+
+2.2.2 Firefox -> Preferences -> Advanced -> Encryption -> View Certificates -> Authorities -> Import: cert.pem
+
+2.2.3 Selbstsignierte Zertifikate könnten auch durch Schadsoftware oder andere Nutzer eingetragen werden...?
